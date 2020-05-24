@@ -121,7 +121,8 @@ a {
    }
 
 h1{
-    font-weight: 500;
+    font-weight: bold;
+    font-size: 2.25em;
   }
 
 h2 {
@@ -221,6 +222,7 @@ header nav ul{
   display: flex;
   justify-content: space-around;
   width: 100%;
+  padding: 0;
 }
 
 header nav ul li {
@@ -257,6 +259,12 @@ footer .contact {
   margin-bottom: 50px;
 }
 
+footer h3{
+  margin-top: 0;
+  font-size: 1.5em;
+}
+
+
 footer .copyright {
   margin: 20px 0;
 }
@@ -268,9 +276,17 @@ footer .social-icons {
 }
 
 footer .social-icons p {
+  background-color: #527158;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+footer .social-icons p i {
+  font-size: 1.3125em;
 }
 
 /*--------------- Mobile Home --------------*/
@@ -287,29 +303,33 @@ footer .social-icons p {
   background-size: cover;
   background-position: center;
   min-height: 500px;
-  }
 }
 
-.hero-area h1 {
-    font-size: 2.25em;
-    font-family: 'Poppins' sans-serif;
-    font-weight: bold;
-    line-height: 1.2;
-  }
-
+.hero-area h1{
+  margin-top: 0;
+}
 
 /* Aside */
+
+aside .content-wrapper{
+  margin: 30px 0 50px 0;
+}
+
 aside{
   display: flex;
   justify-content: center;
   flex-flow: row wrap;
   align-items: center;
-  background-color: #527158;
+  background-color: #527158
 }
 
 
 aside .form {
   margin-top: 30px;
+}
+
+aside h3{
+  margin-top: 0;
 }
 
 input[type=text] {
@@ -360,6 +380,10 @@ input[type=button] {
     margin: 30px 0;
   }
 
+.features .content-wrapper{
+  margin-top: 0;
+}
+
 
 
 .features p{
@@ -373,37 +397,21 @@ input[type=button] {
 }
 
 /* Reviews */
-.reviews{
-  display: flex;
-  flex-flow: row wrap;
-  justify-content: center;
+.reviews {
   background-color: #2a423a;
-}
-
-.reviews article {
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
+  flex-flow: row wrap;
 }
 
 .reviews h2 {
-  width: 85%;
-  font-weight: 500;
-}
-
-.reviews img{
-  width: 310px;
-}
-
-.reviews article figure,
-.reviews article div {
-  width: 49%;
-
+  margin: 0 0 30px 0;
+  line-height: 1;
 }
 
 .reviews h3 {
-  width: 75%;
-  margin: 0;
-  font-weight: 400;
+  width: 55%;
+  margin: 20px 0;
 }
 
 /* ==========================================================================
@@ -417,6 +425,11 @@ input[type=button] {
   justify-content: center;
   align-items: center;
   background-color: #527158;
+}
+
+.mission h2{
+  margin-top: 0;
+  width: 95%;
 }
 
 .map figure {
@@ -444,8 +457,16 @@ input[type=button] {
   background-color: #2a423a;
 }
 
+.contact-info h2{
+  margin-top: 0;
+}
+
 .contact p {
   margin: 0;
+}
+
+.contact-info h3{
+  margin: 15px 0;
 }
 
 /* ==========================================================================
@@ -461,7 +482,7 @@ input[type=button] {
    }
 
    .faq .content-wrapper {
-     margin: 50px 0 0 0;
+     margin: 50px 0;
      display: flex;
      justify-content: center;
      align-items: center;
@@ -469,7 +490,7 @@ input[type=button] {
    }
 
    .faq h2 {
-     margin-bottom: 40px;
+     margin: 0 0 50px 0;
      line-height: 1;
    }
 
@@ -480,6 +501,7 @@ input[type=button] {
 
    .faq-content h4 {
      line-height: 1.333;
+     margin: 0 0 15px 0;
    }
 
 
@@ -582,56 +604,33 @@ input[type=button] {
 
   /* HEADER */
 
-  header{
+  header {
     justify-content: space-around;
     padding: 33px 0;
-
   }
 
-  header figure {
-      width: 35%;
-  }
-
-  h2 {
-    font-size: 2.25em;
-    line-height: 1.333;
-}
-
-  h3 {
-    font-size: 1.5em;
-    line-height: 1.25;
-}
-
-  header img{
-    display: flex;
-    justify-content: flex-start;
-  }
-
-  header .content-wrapper{
-    justify-content: space-between;
+  header .content-wrapper {
     width: 100%;
-
-  }
-
-  header figure {
-    width: 35%;
-
-  }
-
-  header nav{
-    width: 20%;
-
-  }
-
-  header nav ul{
     justify-content: space-between;
   }
 
-
-  .header-divider{
-    display: none;
-
+  header figure {
+    width: 36%;
   }
+
+  header nav {
+    width: 20%;
+  }
+
+  header nav ul {
+    justify-content: space-between;
+    padding: 0;
+  }
+
+  .header-divider {
+    display: none;
+  }
+
 
   /* HERO */
 
@@ -680,8 +679,6 @@ aside h3{
     align-items: center;
     flex-flow: column wrap;
     flex-basis: 50%;
-
-
   }
 
   .features .features-item-description {
@@ -690,36 +687,44 @@ aside h3{
 
 
   .features h2{
-    margin-bottom: 20px;
+    margin: 0 0 20px 0;
   }
 
   .features i {
   	font-size: 4.5em;
-          margin-bottom: 30px;
+    margin-bottom: 30px;
+  }
+
+  .features .content-wrapper{
+    margin: 50px 0;
   }
 
 
   /* REVIEWS */
 
-  .revies article{
+  .reviews article {
     display: flex;
     justify-content: space-between;
-
   }
 
   .reviews h2 {
     width: 85%;
+    margin-top: 0;
   }
 
-
-  .reviews article div{
+  .reviews article figure,
+  .reviews article div {
     width: 49%;
   }
 
   .reviews h3 {
     width: 75%;
     margin: 0;
-}
+  }
+
+  .reviews img{
+    width: 312px;
+  }
 
   /* FOOTER */
 
@@ -754,6 +759,11 @@ aside h3{
       line-height: 1.285;
   }
 
+  footer .social-icons {
+    width: 12.5em;
+    justify-content: space-between;
+  }
+
   /* ==========================================================================
      About
      ========================================================================== */
@@ -762,12 +772,17 @@ aside h3{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding-top: 20px;
   }
 
+  .mission h2{
+    font-size: 2.25em;
+    margin: 0 0 40px 0;
+  }
 
   .mission-content p{
     width: 45%;
+    padding: 0;
+    line-height: 18px;
   }
 
   .contact-info .content-wrapper h2{
@@ -777,6 +792,7 @@ aside h3{
 
   .contact-info h2{
     padding-right: 130px;
+    margin-top: 0;
   }
 
   .contact-info .contact{
@@ -785,7 +801,7 @@ aside h3{
     align-items: flex-start;
   }
 
-  .contact åh4 {
+  .contact h3 {
     font-size: 1.5em;
   }
 
@@ -852,6 +868,11 @@ aside h3{
       line-height: 1.333;
   }
 
+  header nav ul {
+    justify-content: space-between;
+    padding: 0;
+  }
+
 
   /* HERO */
 
@@ -860,7 +881,7 @@ aside h3{
   }
 
   .hero-area h1 {
-    width: 60%;
+    width: 80%;
     font-size: 3.75em;
 }
 
@@ -874,6 +895,10 @@ aside h3{
   aside .content-wrapper .form{
     width: 30%;
 
+  }
+
+  aside h3{
+    font-size: 1.875em;
   }
 
   .form-description p {
@@ -894,7 +919,11 @@ aside h3{
 
   .features i {
   	font-size: 4.5;
-          margin-bottom: 20px;
+    margin-bottom: 20px;
+  }
+
+  .features .content-wrapper{
+    margin: 100px 0;
   }
 
 
@@ -929,8 +958,16 @@ aside h3{
      font-size: 3em;
  }
 
- .contact-content h4 {
+ .contact h3 {
    font-size: 1.875em;
+ }
+
+ .mission p{
+   line-height: 1.5;
+ }
+
+.contact-info h3{
+   margin-top: 0;
  }
 
 
@@ -942,11 +979,16 @@ aside h3{
  .faq p {
      font-size: 1.125em;
      line-height: 1;
+     font-weight: 400;
  }
 
  .faq h2 {
     width: 100%;
  }
+
+.faq-content{
+  margin-bottom: 0;
+}
 
 
 
